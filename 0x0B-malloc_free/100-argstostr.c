@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/** argstostr - convert the params passed to the program to string
+/**
+ * argstostr - convert the params passed to the program to string
  * @ac: the argument count
  * @av: the argument vector
  *
@@ -21,22 +22,6 @@ char *argstostr(int ac, char **av)
 		while (av[i][j])
 		{
 			ch++;
-			j++;
-		}
-
-		j = 0;
-		i++;
-	}
-
-	s = malloc((sizeof(char) * ch) + ac + 1);
-
-	i = 0;
-	while (av[i])
-	{
-		while (av[i][j])
-		{
-			s[k] = av[i][j];
-			k++;
 			j++;
 		}
 
