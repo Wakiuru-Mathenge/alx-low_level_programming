@@ -29,12 +29,12 @@ int word_len(char *str)
  * count_words - Counts the number of words contained within a string.
  * @str: The string to be searched.
  *
- * Return:mThe number of words contained within str.
+ * Return: The number of words contained within str.
  */
 
 int count_words(char *str)
 {
-	int index = 0; words = 0, len = 0;
+	int index = 0, words = 0, len = 0;
 
 	for (index = 0; *(str + index); index++)
 		len++;
